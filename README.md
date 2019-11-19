@@ -4,4 +4,4 @@
 
 移动端 & 桌面端
 
-![Angular](images/angular.svg)
+![Angular](images/angular.jpg)
