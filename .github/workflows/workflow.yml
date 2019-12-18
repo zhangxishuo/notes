@@ -27,11 +27,12 @@ jobs:
         npm install gitbook-cli
         node_modules/.bin/gitbook -v
         node_modules/.bin/gitbook install
+        node_modules/.bin/gitbook build
 
     - name: 构建与发布
       uses: JamesIves/github-pages-deploy-action@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BASE_BRANCH: master
         BRANCH: gh-pages
         FOLDER: _book
-        BUILD_SCRIPT: node_modules/.bin/gitbook build
