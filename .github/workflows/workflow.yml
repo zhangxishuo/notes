@@ -1,0 +1,37 @@
+# 配置工作流
+name: 工作流
+# 在 push 时执行
+on:
+  push:
+    branches:
+      - master
+
+# 配置工作
+jobs:
+  # build-and-deploy 工作
+  build-and-deploy:
+    # 运行于 windows 系统
+    runs-on: windows-latest
+    # 配置工作步骤
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@master
+
+    - name: 安装node
+      uses: actions/setup-node@master
+      with:
+        node-version: 12
+
+    - name: 安装gitbook
+      run: |
+        call npm install -g gitbook-cli
+        call gitbook -v
+        call gitbook install
+
+    - name: 构建与发布
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: _book
+        BUILD_SCRIPT: call gitbook build
