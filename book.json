@@ -1,11 +1,16 @@
 {
+  "title": "张喜硕的个人笔记",
+  "author": "张喜硕",
+  "language" : "zh-hans",
   "plugins": [
     "-lunr",
     "-search",
     "search-plus",
     "github",
     "katex",
-    "tbfed-pagefooter"
+    "back-to-top-button",
+    "tbfed-pagefooter",
+    "chapter-fold"
   ],
   "pluginsConfig": {
     "github": {
