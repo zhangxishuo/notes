@@ -15,10 +15,10 @@ jobs:
     # 配置工作步骤
     steps:
     - name: 检出代码
-      uses: actions/checkout@master
+      uses: actions/checkout@v2
 
     - name: 安装node
-      uses: actions/setup-node@master
+      uses: actions/setup-node@v1
       with:
         node-version: 12
 
@@ -30,7 +30,7 @@ jobs:
         node_modules/.bin/gitbook build
 
     - name: 构建与发布
-      uses: JamesIves/github-pages-deploy-action@master
+      uses: JamesIves/github-pages-deploy-action@v3
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
