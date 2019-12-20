@@ -29,10 +29,8 @@ jobs:
         node_modules/.bin/gitbook install
 
     - name: 构建与发布
-      uses: JamesIves/github-pages-deploy-action@releases/v2
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BASE_BRANCH: master
-        BRANCH: gh-pages
-        FOLDER: _book
-        BUILD_SCRIPT: node_modules/.bin/gitbook build
+      run: |
+        git config user.name "zhangxishuo"
+        git config user.email "zhangxishuo1998@outlook.com"
+        node_modules/.bin/gitbook build
+        git subtree push --prefix=_book https://${{ secrets.ACCESS_TOKEN }}@github.com/zhangxishuo/notes.git gh-pages
