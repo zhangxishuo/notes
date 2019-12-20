@@ -30,7 +30,7 @@ jobs:
         node_modules/.bin/gitbook build
 
     - name: 构建与发布
-      uses: JamesIves/github-pages-deploy-action@master
+      uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BASE_BRANCH: master
