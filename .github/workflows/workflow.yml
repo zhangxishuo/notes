@@ -30,7 +30,7 @@ jobs:
         node_modules/.bin/gitbook build
 
     - name: 构建与发布
-      uses: JamesIves/github-pages-deploy-action@v3
+      uses: JamesIves/github-pages-deploy-action@releases/v3
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
