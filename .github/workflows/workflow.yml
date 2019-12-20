@@ -8,8 +8,10 @@ on:
 
 # 配置工作
 jobs:
-  # build-and-deploy 工作
-  build-and-deploy:
+  # automation-deploy 工作
+  automation-deploy:
+    # 自动化部署
+    name: 自动化部署
     # 运行于 ubuntu 系统
     runs-on: ubuntu-latest
     # 配置工作步骤
@@ -33,4 +35,4 @@ jobs:
         git config user.name "zhangxishuo"
         git config user.email "zhangxishuo1998@outlook.com"
         node_modules/.bin/gitbook build
-        git subtree push --force --quiet --prefix=_book https://${{ secrets.ACCESS_TOKEN }}@github.com/zhangxishuo/notes.git gh-pages
+        git subtree push --prefix=_book https://${{ secrets.ACCESS_TOKEN }}@github.com/zhangxishuo/notes.git gh-pages --force
