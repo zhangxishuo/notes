@@ -32,7 +32,7 @@ jobs:
     - name: 构建与发布
       uses: JamesIves/github-pages-deploy-action@master
       env:
-        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BASE_BRANCH: master
         BRANCH: gh-pages
         FOLDER: _book
