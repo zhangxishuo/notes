@@ -35,4 +35,4 @@ jobs:
         git config user.name "zhangxishuo"
         git config user.email "zhangxishuo1998@outlook.com"
         node_modules/.bin/gitbook build
-        git subtree push --prefix=_book https://${{ secrets.ACCESS_TOKEN }}@github.com/zhangxishuo/notes.git gh-pages
+        git push https://${{ secrets.ACCESS_TOKEN }}@github.com/zhangxishuo/notes.git `git subtree split --prefix=_book`:gh-pages --force
