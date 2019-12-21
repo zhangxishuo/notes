@@ -1,4 +1,5 @@
 {
+  "output.name": "site",
   "title": "张喜硕的笔记",
   "author": "张喜硕",
   "language" : "zh-hans",
@@ -13,6 +14,7 @@
     "chapter-fold"
   ],
   "pluginsConfig": {
+    "output": "test",
     "github": {
       "url": "https://github.com/zhangxishuo"
     },
