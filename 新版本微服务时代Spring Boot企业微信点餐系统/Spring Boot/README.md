@@ -2,6 +2,10 @@
 
 ## JPA
 
+- 建表用`SQL`，不用`JPA`建表。
+- 慎用`@OneToMany`和`@ManyToOne`，不利于分库分表。
+- 不使用外键，在程序中手动控制。
+
 在生成更新语句时，仅使用被修改过的列：
 
 ```java
@@ -26,6 +30,18 @@
 spring:
   jpa:
     show-sql: true
+```
+
+## MyBatis
+
+`MyBatis`官方不推荐使用`XML`的方式，建议使用注解方式开发。
+
+配置`Mapper`日志级别，打印`MyBatis SQL`执行情况：
+
+```yml
+logging:
+  level:
+    com.imooc.mapper: trace
 ```
 
 ## 序列化
@@ -72,3 +88,7 @@ private Date createTime;
 ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
 HttpServletRequest request = attributes.getRequest();
 ```
+
+## 压力测试
+
+使用简易工具`Apache ab`。
