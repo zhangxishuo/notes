@@ -30,6 +30,12 @@ spring:
 
 ## 序列化
 
+`Json`序列化时忽略属性：
+
+```java
+@JsonIgnore
+```
+
 自定义序列化程序：
 
 ```java
@@ -49,6 +55,8 @@ private Date createTime;
 ```
 
 ## Spring Boot
+
+枚举也可以实现接口。
 
 资源文件：`resources/static`目录。
 
