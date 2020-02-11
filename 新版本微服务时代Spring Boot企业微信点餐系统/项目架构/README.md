@@ -2,7 +2,7 @@
 
 ## 部署架构
 
-![部署架构](images/deployment.png)
+![部署架构](.assets/deployment.png)
 
 - 整个系统交由`NGINX`托管，`NGINX`转发`api`请求到`Tomcat`。
 
