@@ -65,3 +65,10 @@ private Date createTime;
 ```java
 @ConfigurationProperties(prefix = "app")
 ```
+
+获取`request`请求对象：
+
+```java
+ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+HttpServletRequest request = attributes.getRequest();
+```
