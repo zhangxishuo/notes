@@ -29,3 +29,31 @@ spring:
 ```
 
 ## 序列化
+
+自定义序列化程序：
+
+```java
+public class Date2LongSerializer extends JsonSerializer<Date> {
+
+    @Override
+    public void serialize(Date date, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException, JsonProcessingException {
+        jsonGenerator.writeNumber(date.getTime() / 1000);
+    }
+}
+```
+
+```java
+/** 创建时间. */
+@JsonSerialize(using = Date2LongSerializer.class)
+private Date createTime;
+```
+
+## Spring Boot
+
+资源文件：`resources/static`目录。
+
+根据前缀映射配置：
+
+```java
+@ConfigurationProperties(prefix = "app")
+```
