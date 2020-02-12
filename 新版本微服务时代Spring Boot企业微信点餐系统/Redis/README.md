@@ -70,6 +70,8 @@ redis> GET mycounter
 "0"
 ```
 
+## 分布式锁
+
 ```java
 public class RedisLock {
 
@@ -113,4 +115,33 @@ public class RedisLock {
         redisTemplate.opsForValue().getOperations().delete(key);
     }
 }
+```
+
+## 缓存
+
+启用缓存：
+
+```java
+@EnableCaching
+```
+
+缓存的对象需要实现`Serializable`接口：
+
+```java
+public class ResultVO<T> implements Serializable {
+    private static final long serialVersionUID = 3068837394742385883L;
+}
+```
+
+注解使用：
+
+```java
+/** 统一缓存前缀，加载类上，方法上的注解可不配置 value */
+@CacheConfig(value = "app")
+/** 缓存方法返回值，可以配置 SPEL 表达式 */
+@Cacheable(value = "app", key = "#id")
+/** 返回值添加到缓存中 */
+@CachePut(value = "app", key = "#id")
+/** 方法执行后删除缓存 */
+@CachEvict(value = "app", key = "#id")
 ```
