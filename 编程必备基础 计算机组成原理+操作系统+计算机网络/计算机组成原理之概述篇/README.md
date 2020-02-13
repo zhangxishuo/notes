@@ -6,7 +6,7 @@
 
 #### 第一阶段 [1946 ~ 1957] 电子管计算机
 
-![电子管](./assets/electron.png)
+![电子管](.assets/electron.png)
 
 **历史**
 
@@ -22,7 +22,7 @@
 
 #### 第二阶段 [1957 ~ 1964] 晶体管计算机
 
-![晶体管](./assets/transistor.png)
+![晶体管](.assets/transistor.png)
 
 **历史**
 
