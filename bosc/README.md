@@ -4,12 +4,7 @@
 
 ### 通用
 
-- [ ] Mercury
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [x] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley
+- [ ] 计算机组成与结构
+- [ ] 计算机操作系统教程
+- [ ] 计算机网络
+- [ ] 数据库系统概念
