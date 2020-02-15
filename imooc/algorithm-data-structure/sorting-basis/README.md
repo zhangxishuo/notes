@@ -49,3 +49,22 @@ void selectionSort(T* arr, int n) {
     }
 }
 ```
+
+## 插入排序
+
+就像扑克牌一样，从第二个元素开始，前面的所有元素顺序有序，后面的新元素插入到自己在前面数组中的适当位置。
+
+![插入排序](.assets/insertion-sort.gif)
+
+```cpp
+template<typename T>
+void insertionSort(T* arr, int n) {
+    /** 从第二个元素遍历到最后 */
+    for (int i = 1; i < n; i ++) {
+        /** 依次与之前的元素比较，如果小，交换 */
+        for (int j = i; j > 0 && arr[j] < arr[j - 1]; j --) {
+            swap(arr[j], arr[j - 1]);
+        }
+    }
+}
+```
