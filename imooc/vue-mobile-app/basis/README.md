@@ -168,3 +168,34 @@
   });
 </script>
 ```
+
+## 条件渲染
+
+- 移除`DOM`：`v-if`
+- 隐藏`DOM`：`v-show`
+- `v-if`的相反条件：`v-else`
+- 多重条件：`v-else-if`
+
+```html
+<body>
+  <div id="root">
+    <div v-if="show">Hello World!</div>
+    <div v-else>Bye World!</div>
+    <div v-show="show">Hello World!</div>
+
+    <div v-if="data === 'A'">A</div>
+    <div v-else-if="data === 'B'">B</div>
+    <div v-else>其他</div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript">
+  var vm = new Vue({
+    el: '#root',
+    data: {
+      show: false,
+      data: 'A'
+    }
+  });
+</script>
+```
