@@ -45,3 +45,28 @@
 ```
 
 ![](.assets/lifecycle.png)
+
+## Vue 模板语法
+
+- 插值表达式：`{{}}`
+- 绑定文本指令：`v-text`
+- 绑定代码指令：`v-html`
+
+```html
+<body>
+  <div id="root">
+    {{ message }}
+    <div v-text="message"></div>
+    <div v-html="message"></div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript">
+  var vm = new Vue({
+    el: '#root',
+    data: {
+      message: 'Hello World!'
+    }
+  });
+</script>
+```
