@@ -70,3 +70,37 @@
   });
 </script>
 ```
+
+## 属性计算与监听器
+
+- 属性计算：`computed`
+- 监听器：`watch`
+
+```html
+<body>
+  <div id="root">
+    {{ fullName }}
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript">
+  var vm = new Vue({
+    el: '#root',
+    data: {
+      firstName: 'Xishuo',
+      lastName: 'Zhang'
+    },
+    watch: {
+      firstName: function() {
+        // 监听属性变更
+      }
+    },
+    /** 计算属性，方法缓存，当依赖的属性不更改时，方法不会重复执行 */
+    computed: {
+      fullName: function() {
+        return this.firstName + ' ' + this.lastName;
+      }
+    }
+  });
+</script>
+```
