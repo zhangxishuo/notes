@@ -199,3 +199,34 @@
   });
 </script>
 ```
+
+## 列表渲染
+
+- 循环：`v-for`，通过`key`提升性能。
+
+```html
+<body>
+  <div id="root">
+    <ul>
+      <li v-for="(item, index) in list" :key="item.id">
+        {{ item.text }}
+      </li>
+    </ul>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript">
+  var vm = new Vue({
+    el: '#root',
+    data: {
+      list: [{
+        id: 111,
+        text: 'A'
+      }, {
+        id: 222,
+        text: 'B'
+      }]
+    }
+  });
+</script>
+```
