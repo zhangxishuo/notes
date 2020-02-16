@@ -1,6 +1,6 @@
 # Vue 基础精讲
 
-## Vue 实例生命周期
+## 实例生命周期
 
 ```html
 <body>
@@ -46,7 +46,7 @@
 
 ![](.assets/lifecycle.png)
 
-## Vue 模板语法
+## 模板语法
 
 - 插值表达式：`{{}}`
 - 绑定文本指令：`v-text`
@@ -127,6 +127,42 @@
           this.firstName = arr[0];
           this.lastName = arr[1];
         }
+      }
+    }
+  });
+</script>
+```
+
+## 样式绑定
+
+- 绑定样式：`:class`
+
+```html
+<head>
+  <title>Vue</title>
+  <style type="text/css">
+    .activated {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div @click="click" :class="{activated: actived}">
+      Hello World!
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript">
+  var vm = new Vue({
+    el: '#root',
+    data: {
+      actived: false
+    },
+    methods: {
+      click: function() {
+        this.actived = !this.actived;
       }
     }
   });
