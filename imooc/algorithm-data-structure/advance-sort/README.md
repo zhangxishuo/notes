@@ -4,7 +4,7 @@
 
 ![归并排序](.assets/merge-sort.gif)
 
-对数组进行划分，对数组左右两侧分别进行归并排序，并对排好序的两侧进行合并。
+对数组从中间进行划分，对数组左右两侧分别进行归并排序，并对排好序的两侧进行合并。
 
 ```cpp
 /** 合并数组 arr[l, mid] 和 arr[mid + 1, r] 两部分 */
@@ -59,5 +59,53 @@ void __mergeSort(T* arr, int l, int r) {
 template<typename T>
 void mergeSort(T* arr, int n) {
     __mergeSort(arr, 0, n - 1);
+}
+```
+
+## 快速排序
+
+![快速排序](.assets/quick-sort.gif)
+
+选取一个基准，对数组进行划分，数组中左侧元素都比基准小，数组中右侧元素都比基准大，再对数组划分后的左右部分分别进行快速排序。
+
+```cpp
+/** 对 arr [l, r] 的范围进行快速排序划分 */
+template<typename T>
+int __partition(T* arr, int l, int r) {
+    /** 选取基准 */
+    T value = arr[l];
+
+    /** (l, i] 的范围比 value 小，(i, j) 的范围比 value 大 */
+    int i = l;
+    for (int j = l + 1; j <= r; j ++) {
+        if (arr[j] < value) {
+            swap(arr[j], arr[i + 1]);
+            i ++;
+        }
+    }
+
+    /** 将基准交换到中间 */
+    swap(arr[i], arr[l]);
+    return i;
+}
+
+/** 对 arr [l, r] 的范围进行排序 */
+template<typename T>
+void __quickSort(T* arr, int l, int r) {
+    if (l >= r) {
+        return;
+    }
+
+    /** 划分 */
+    int p = __partition(arr, l, r);
+
+    /** 对数组左右分别进行快速排序 */
+    __quickSort(arr, l, p - 1);
+    __quickSort(arr, p + 1, r);
+}
+
+template<typename T>
+void quickSort(T* arr, int n) {
+    __quickSort(arr, 0, n - 1);
 }
 ```
