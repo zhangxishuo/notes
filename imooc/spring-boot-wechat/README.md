@@ -1,1 +1,1 @@
-![新版本微服务时代Spring Boot企业微信点餐系统](.assets/imooc.png)
+![新版本微服务时代Spring Boot企业微信点餐系统](assets/imooc.png)
