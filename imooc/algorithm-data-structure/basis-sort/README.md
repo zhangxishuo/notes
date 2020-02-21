@@ -30,7 +30,7 @@ int* generateRandomArray(int n, int min, int max) {
 
 选择当前数组中的最小的元素，与第一个元素交换，选择第二小的元素，与第二个元素交换。
 
-![选择排序](.assets/selection-sort.gif)
+![选择排序](assets/selection-sort.gif)
 
 ```cpp
 template<typename T>
@@ -56,7 +56,7 @@ void selectionSort(T* arr, int n) {
 
 在排序近乎有序的数组时，效率非常高。如果数组已经有序，复杂度为`O(n)`。
 
-![插入排序](.assets/insertion-sort.gif)
+![插入排序](assets/insertion-sort.gif)
 
 ```cpp
 template<typename T>

@@ -2,7 +2,7 @@
 
 ## 归并排序
 
-![归并排序](.assets/merge-sort.gif)
+![归并排序](assets/merge-sort.gif)
 
 对数组从中间进行划分，对数组左右两侧分别进行归并排序，并对排好序的两侧进行合并。
 
@@ -64,7 +64,7 @@ void mergeSort(T* arr, int n) {
 
 ## 快速排序
 
-![快速排序](.assets/quick-sort.gif)
+![快速排序](assets/quick-sort.gif)
 
 选取一个基准，对数组进行划分，数组中左侧元素都比基准小，数组中右侧元素都比基准大，再对数组划分后的左右部分分别进行快速排序。
 
