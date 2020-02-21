@@ -24,6 +24,12 @@ scp target/sell.jar root@192.168.30.113:/opt/apps
 nohup java -jar sell.jar > /dev/null 2>&1 &
 ```
 
+配置`UTF-8`编码参数：
+
+```shell
+-Dfile.encoding=UTF-8
+```
+
 定位到系统服务目录：
 
 ```shell
