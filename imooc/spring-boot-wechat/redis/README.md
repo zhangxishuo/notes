@@ -137,7 +137,7 @@ public class ResultVO<T> implements Serializable {
 
 ```java
 /** 统一缓存前缀，加载类上，方法上的注解可不配置 value */
-@CacheConfig(value = "app")
+@CacheConfig(cacheNames = "app")
 /** 缓存方法返回值，可以配置 SPEL 表达式 */
 @Cacheable(value = "app", key = "#id")
 /** 返回值添加到缓存中 */
