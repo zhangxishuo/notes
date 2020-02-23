@@ -146,3 +146,46 @@ int __partition2(T* arr, int l, int r) {
     return i;
 }
 ```
+
+## 三路快排
+
+使用三路快排，不考虑等于基准的情况。
+
+```cpp
+/** 对 arr [l, r] 的范围进行排序 */
+template<typename T>
+void __quickSort(T* arr, int l, int r) {
+    if (l >= r) {
+        return;
+    }
+
+    /** 划分, arr[l + 1, lt) < value, arr[lt, i] == value, arr(gt, r] > value */
+    int value = arr[l];
+    int lt = l + 1;
+    int gt = r;
+    int i = l + 1;
+    while (i <= gt) {
+        if (arr[i] < value) {
+            swap(arr[lt], arr[i]);
+            lt ++;
+            i ++;
+        } else if (arr[i] > value) {
+            swap(arr[i], arr[gt]);
+            gt --;
+        } else {
+            i ++;
+        }
+    }
+    swap(arr[l], arr[lt - 1]);
+    lt --;
+
+    /** 对数组左右分别进行快速排序 */
+    __quickSort(arr, l, lt - 1);
+    __quickSort(arr, gt + 1, r);
+}
+
+template<typename T>
+void quickSort(T* arr, int n) {
+    __quickSort(arr, 0, n - 1);
+}
+```
