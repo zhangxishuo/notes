@@ -115,3 +115,34 @@ void quickSort(T* arr, int n) {
 当整个数组完全有序，最差情况，退化为`O(n^2)`。
 
 随机选择一个基准，将这个基准与第一个元素交换，其他逻辑不变，使得快速排序适应近乎有序的数组。
+
+## 双路快排
+
+如果数组中有大量等于基准的元素，快速排序会使树失衡，性能较差。
+
+```cpp
+/** 对 arr [l, r] 的范围进行快速排序划分 */
+template<typename T>
+int __partition2(T* arr, int l, int r) {
+    /** 选取基准 */
+    T value = arr[l];
+
+    /** arr[l + 1, i) <= value; arr(j, r] >= value */
+    int i = l + 1;
+    int j = r;
+
+    while (i <= j) {
+        while (arr[i] <= value && i <= j) {
+            i ++;
+        }
+        while (arr[j] >= value && i <= j) {
+            j --;
+        }
+        swap(arr[i], arr[j]);
+    }
+
+    /** 将基准交换到中间 */
+    swap(arr[i], arr[l]);
+    return i;
+}
+```
