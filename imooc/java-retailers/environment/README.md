@@ -19,3 +19,11 @@ wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-
 ```shell
 yum makecache
 ```
+
+## JDK
+
+**安装 JDK**
+
+```shell
+yum install java-1.8.0-openjdk.x86_64
+```
