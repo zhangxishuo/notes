@@ -6,3 +6,4 @@
     * [项目架构](imooc/0-spring-boot-wechat/0-architecture/README.md)
     * [数据库](imooc/0-spring-boot-wechat/1-database/README.md)
     * [日志](imooc/0-spring-boot-wechat/2-log/README.md)
+    * [Spring Boot](imooc/0-spring-boot-wechat/3-spring-boot/README.md)
