@@ -10,3 +10,4 @@
     * [微信授权](imooc/0-spring-boot-wechat/4-wechat-authorize/README.md)
     * [微信支付](imooc/0-spring-boot-wechat/5-wechat-pay/README.md)
     * [Redis](imooc/0-spring-boot-wechat/6-redis/README.md)
+    * [项目部署](imooc/0-spring-boot-wechat/7-deploy/README.md)
