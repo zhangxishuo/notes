@@ -44,7 +44,7 @@
 </script>
 ```
 
-![](.assets/lifecycle.png)
+![](assets/lifecycle.png)
 
 ## 模板语法
 

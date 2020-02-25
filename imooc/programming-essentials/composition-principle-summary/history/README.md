@@ -4,7 +4,7 @@
 
 ### 第一阶段 [1946 ~ 1957] 电子管计算机
 
-![电子管](.assets/electron.png)
+![电子管](assets/electron.png)
 
 **历史**
 
@@ -20,7 +20,7 @@
 
 ### 第二阶段 [1957 ~ 1964] 晶体管计算机
 
-![晶体管](.assets/transistor.png)
+![晶体管](assets/transistor.png)
 
 **历史**
 
@@ -38,7 +38,7 @@
 
 ### 第三阶段 [1964 ~ 1980] 集成电路计算机
 
-![集成电路](.assets/molectron.png)
+![集成电路](assets/molectron.png)
 
 德州仪器的工程师发明了集成电路`(IC)`。
 
@@ -48,7 +48,7 @@
 
 ### 第四阶段 [1980 ~ 现在] 超大规模集成电路计算机
 
-![超大规模集成电路](.assets/big-molectron.png)
+![超大规模集成电路](assets/big-molectron.png)
 
 一个芯片集成了上百万的晶体管。
 

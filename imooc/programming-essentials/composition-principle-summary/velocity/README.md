@@ -17,12 +17,12 @@
 
 `1G`内存，可以存储多少字节的数据？可以存储多少比特数据？
 
-> ![答案](.assets/expression-conversion.png)
+> ![答案](assets/expression-conversion.png)
 
 为什么网上买的移动硬盘`500G`，其实只有`465G`？
 
 > 硬盘厂商使用`10`进制标记容量，进制为`1000`，而不是`1024`，所以容量小。
-> ![答案](.assets/expression-calculation.png)
+> ![答案](assets/expression-calculation.png)
 
 ## 速度单位
 

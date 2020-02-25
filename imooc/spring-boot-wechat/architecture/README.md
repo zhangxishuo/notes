@@ -2,7 +2,7 @@
 
 ## 部署架构
 
-![部署架构](.assets/deployment.png)
+![部署架构](assets/deployment.png)
 
 - 整个系统交由`NGINX`托管，`NGINX`转发`api`请求到`Tomcat`。
 
@@ -45,7 +45,7 @@
 
 垂直扩展，拆分服务，分布式。
 
-![分布式 Session](.assets/distributed.png)
+![分布式 Session](assets/distributed.png)
 
 `IP`哈希：存在隐患，当服务宕机时不可用。
 

@@ -31,7 +31,7 @@
 
 ### 瓶颈
 
-![冯诺依曼体系](.assets/architecture.png)
+![冯诺依曼体系](assets/architecture.png)
 
 冯诺依曼瓶颈：因`CPU`与存储器相分离，在`CPU`与存储器之间的数据流量成为了效率非常严重的限制，`CPU`经常空转等待数据传输。
 
@@ -39,6 +39,6 @@
 
 现代计算机在冯诺依曼体系结构基础上进行修改，解决`CPU`与存储设备之间的性能差异问题。
 
-![现代计算机的结构](.assets/modern-architecture.png)
+![现代计算机的结构](assets/modern-architecture.png)
 
 将存储器归入`CPU`，此处的存储器就是现在常说的`CPU`多级缓存，缓存是使用和`CPU`同样的`14`纳米工艺制造的硅半导体，成本高昂且非常占用`CPU`核心面积，故不能做成大容量。

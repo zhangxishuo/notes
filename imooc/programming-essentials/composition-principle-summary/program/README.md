@@ -4,19 +4,19 @@
 
 代表语言：`C/C++`、`Object-C`、`Golang`。
 
-![程序翻译](.assets/translate.png)
+![程序翻译](assets/translate.png)
 
 ## 程序解释
 
 代表语言：`Python`、`PHP`、`JavaScript`。
 
-![程序解释](.assets/explain.png)
+![程序解释](assets/explain.png)
 
 ## 翻译 + 解释
 
 代表语言：`Java`、`C#`。
 
-![JVM虚拟机](.assets/jvm.png)
+![JVM虚拟机](assets/jvm.png)
 
 ## 计算机的层级
 
