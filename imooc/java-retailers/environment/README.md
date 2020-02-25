@@ -41,3 +41,10 @@ vim conf/server.xml
 # 启动 Tomcat
 bin/startup.sh
 ```
+
+## Maven
+
+```bash
+# 安装 mavn
+yum install maven
+```
