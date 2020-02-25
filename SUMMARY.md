@@ -12,3 +12,4 @@
     * [Redis](imooc/0-spring-boot-wechat/6-redis/README.md)
     * [项目部署](imooc/0-spring-boot-wechat/7-deploy/README.md)
   * [从0开始独立完成企业级Java电商网站服务端开发](imooc/1-java-online-retailer/README.md)
+    * [数据库](imooc/1-java-online-retailer/0-database/README.md)
