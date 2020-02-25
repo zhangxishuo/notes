@@ -8,3 +8,4 @@
     * [日志](imooc/0-spring-boot-wechat/2-log/README.md)
     * [Spring Boot](imooc/0-spring-boot-wechat/3-spring-boot/README.md)
     * [微信授权](imooc/0-spring-boot-wechat/4-wechat-authorize/README.md)
+    * [微信支付](imooc/0-spring-boot-wechat/5-wechat-pay/README.md)
