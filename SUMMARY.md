@@ -11,3 +11,4 @@
     * [微信支付](imooc/0-spring-boot-wechat/5-wechat-pay/README.md)
     * [Redis](imooc/0-spring-boot-wechat/6-redis/README.md)
     * [项目部署](imooc/0-spring-boot-wechat/7-deploy/README.md)
+  * [从0开始独立完成企业级Java电商网站服务端开发](imooc/1-java-online-retailers/README.md)
