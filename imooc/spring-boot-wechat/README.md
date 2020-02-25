@@ -1,1 +1,3 @@
-![新版本微服务时代Spring Boot企业微信点餐系统](assets/imooc.png)
+课程名：《Spring Boot双版本(1.5/2.1) 打造企业级微信点餐系统》
+
+课程地址：https://coding.imooc.com/class/422.html
