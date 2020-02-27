@@ -15,3 +15,4 @@
     * [数据库](imooc/1-java-online-retailer/0-database/README.md)
   * [算法与数据结构-综合提升C++版](imooc/2-algorithm-data-structure/README.md)
     * [排序基础](imooc/2-algorithm-data-structure/0-basis-sort/README.md)
+    * [高级排序算法](imooc/2-algorithm-data-structure/1-advance-sort/README.md)
