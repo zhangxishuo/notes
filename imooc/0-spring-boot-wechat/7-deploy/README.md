@@ -13,7 +13,7 @@ mvn clean package -Dmaven.test.skip=true
 将打包后的文件拷贝到服务器：
 
 ```shell
-scp target/sell.jar root@192.168.30.113:/opt/apps
+scp [-P 2122] target/sell.jar root@192.168.30.113:/opt/apps
 ```
 
 ## CentOS
@@ -21,13 +21,7 @@ scp target/sell.jar root@192.168.30.113:/opt/apps
 启动后台服务：
 
 ```shell
-nohup java -jar sell.jar > /dev/null 2>&1 &
-```
-
-配置`UTF-8`编码参数：
-
-```shell
--Dfile.encoding=UTF-8
+nohup java [-Dfile.encoding=UTF-8] -jar sell.jar > /dev/null 2>&1 &
 ```
 
 定位到系统服务目录：
