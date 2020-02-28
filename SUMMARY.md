@@ -27,3 +27,4 @@
     * [过期类、属性、接口的正确处理姿势](book/0-alibaba-java-spec/5-deprecate/README.md)
     * [空指针引发的血案](book/0-alibaba-java-spec/6-null-pointer/README.md)
     * [当 Switch 遇到空指针](book/0-alibaba-java-spec/7-switch/README.md)
+    * [枚举类的正确学习方式](book/0-alibaba-java-spec/8-enum/README.md)
