@@ -19,3 +19,4 @@
     * [高级排序算法](imooc/2-algorithm-data-structure/1-advance-sort/README.md)
 * [读书]()
   * [码出规范：《阿里巴巴Java开发手册》详解](book/0-alibaba-java-spec/README.md)
+    * [Integer 缓存问题分析](book/0-alibaba-java-spec/0-integer-cache/README.md)
