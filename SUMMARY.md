@@ -23,3 +23,5 @@
     * [Java 序列化引发的血案](book/0-alibaba-java-spec/1-serialization/README.md)
     * [学习浅拷贝和深拷贝的正确方式](book/0-alibaba-java-spec/2-copy/README.md)
     * [分层领域模型使用解读](book/0-alibaba-java-spec/3-domain-model/README.md)
+    * [Java 属性映射的正确姿势](book/0-alibaba-java-spec/4-property-map/README.md)
+    * [过期类、属性、接口的正确处理姿势](book/0-alibaba-java-spec/5-deprecate/README.md)
