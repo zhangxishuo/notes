@@ -13,7 +13,7 @@ mvn clean package -Dmaven.test.skip=true
 将打包后的文件拷贝到服务器：
 
 ```shell
-scp [-P 2122] target/sell.jar root@192.168.30.113:/opt/apps
+scp [-r] [-P 2122] target/sell.jar root@192.168.30.113:/opt/apps
 ```
 
 ## CentOS
