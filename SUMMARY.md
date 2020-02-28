@@ -25,3 +25,4 @@
     * [分层领域模型使用解读](book/0-alibaba-java-spec/3-domain-model/README.md)
     * [Java 属性映射的正确姿势](book/0-alibaba-java-spec/4-property-map/README.md)
     * [过期类、属性、接口的正确处理姿势](book/0-alibaba-java-spec/5-deprecate/README.md)
+    * [空指针引发的血案](book/0-alibaba-java-spec/6-null-pointer/README.md)
