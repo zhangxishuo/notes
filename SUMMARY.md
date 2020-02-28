@@ -21,3 +21,4 @@
   * [码出规范：《阿里巴巴Java开发手册》详解](book/0-alibaba-java-spec/README.md)
     * [Integer 缓存问题分析](book/0-alibaba-java-spec/0-integer-cache/README.md)
     * [Java 序列化引发的血案](book/0-alibaba-java-spec/1-serialization/README.md)
+    * [学习浅拷贝和深拷贝的正确方式](book/0-alibaba-java-spec/2-copy/README.md)
