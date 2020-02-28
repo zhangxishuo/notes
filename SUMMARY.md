@@ -22,3 +22,4 @@
     * [Integer 缓存问题分析](book/0-alibaba-java-spec/0-integer-cache/README.md)
     * [Java 序列化引发的血案](book/0-alibaba-java-spec/1-serialization/README.md)
     * [学习浅拷贝和深拷贝的正确方式](book/0-alibaba-java-spec/2-copy/README.md)
+    * [分层领域模型使用解读](book/0-alibaba-java-spec/3-domain-model/README.md)
