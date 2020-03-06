@@ -42,4 +42,75 @@ i.left_child -> 2 * i;
 i.right_child -> 2 * i + 1;
 ```
 
-07:25
+```cpp
+/**
+ * 最大堆
+ */
+template<typename T>
+class MaxHeap {
+
+private:
+    T* data;
+    int capacity;
+    int count;
+
+    /** 向上调整 */
+    void shiftUp(int k) {
+        while (k > 1 && this->data[k] > this->data[k / 2]) {
+            swap(this->data[k], this->data[k / 2]);
+            k /= 2;
+        }
+    }
+
+    /** 向下调整 */
+    void shiftDown(int k) {
+        while (k * 2 <= count) {
+            int j = k * 2;
+            if (j + 1 <= count && data[j + 1] > data[j]) {
+                j += 1;
+            }
+
+            if (data[k] >= data[j]) {
+                break;
+            }
+            swap(data[k], data[j]);
+            k = j;
+        }
+    }
+
+public:
+    MaxHeap(int capacity) {
+        this->data = new T[capacity + 1];
+        this->capacity = capacity;
+        this->count = 0;
+    }
+
+    ~MaxHeap() {
+        delete[] data;
+    }
+
+    int size() {
+        return count;
+    }
+
+    bool isEmpty() {
+        return count == 0;
+    }
+
+    void insert(T item) {
+        assert(count + 1 <= capacity);
+        this->data[count + 1] = item;
+        count ++;
+        this->shiftUp(count);
+    }
+
+    T extractMax() {
+        assert(count > 0);
+        T ret = data[1];
+        swap(data[1], data[count]);
+        count --;
+        this->shiftDown(1);
+        return ret;
+    }
+};
+```
