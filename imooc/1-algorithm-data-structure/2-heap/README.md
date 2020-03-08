@@ -131,3 +131,27 @@ void heapSort(T* arr, int n) {
 ```
 
 ## Heapify
+
+通过数组可直接构造堆，而无需每次插入元素。
+
+```cpp
+MaxHeap(T *arr, int n) {
+    this->data = new T[n + 1];
+    this->capacity = n;
+    for (int i = 0; i < n; i ++) {
+        this->data[i + 1] = arr[i];
+    }
+    this->count = n;
+    for (int i = count / 2; i > 0; i --) {
+        this->shiftDown(i);
+    }
+}
+
+template<typename T>
+void heapSort(T* arr, int n) {
+    MaxHeap<T> heap = MaxHeap<T>(arr, n);
+    for (int i = n - 1; i >= 0; i --) {
+        arr[i] = heap.extractMax();
+    }
+}
+```
