@@ -132,7 +132,11 @@ void heapSort(T* arr, int n) {
 
 ## Heapify
 
-通过数组可直接构造堆，而无需每次插入元素。
+`Heapify`：将数组转换成堆。
+
+将`n`个元素逐个插入到一个空堆中，算法复杂度是`O(nlogn)`。
+
+`Heapify`的过程，算法复杂度是`O(n)`。
 
 ```cpp
 MaxHeap(T *arr, int n) {
