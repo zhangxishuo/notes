@@ -182,7 +182,7 @@ void __shiftDown(T* arr, int n, int k) {
 template<typename T>
 void heapSort(T* arr, int n) {
     /** Heapify */
-    for (int i = (n - 1) / 2; i >= 0; i --) {
+    for (int i = (n - 1 - 1) / 2; i >= 0; i --) {
         __shiftDown(arr, n, i);
     }
     /** sort */
