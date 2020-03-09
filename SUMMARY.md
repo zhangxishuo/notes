@@ -16,3 +16,4 @@
     * [高级排序算法](imooc/1-algorithm-data-structure/1-advance-sort/README.md)
     * [堆和堆排序](imooc/1-algorithm-data-structure/2-heap/README.md)
     * [二分搜索树](imooc/1-algorithm-data-structure/3-binary-search-tree/README.md)
+    * [并查集](imooc/1-algorithm-data-structure/4-union-find/README.md)
