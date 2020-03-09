@@ -7,11 +7,11 @@
 - union(p, q)
 - find(p)
 
-![并查集的基本数据表示](assets/data.png)
+## Quick Find
+
+![Quick Find](assets/quick-find.png)
 
 值相同的数据表示相连，图中`0/2/4/6/8`相互连接，`1/3/5/7/9`相互连接。
-
-## Quick Find
 
 ```cpp
 class UnionFind {
@@ -57,3 +57,9 @@ public:
     }
 };
 ```
+
+## Quick Union
+
+![Quick Union](assets/quick-union.png)
+
+通过`parent`表示元素的连接关系。
