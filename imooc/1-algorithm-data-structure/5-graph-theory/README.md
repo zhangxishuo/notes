@@ -129,3 +129,79 @@ public:
     }
 };
 ```
+
+## 相邻节点迭代器
+
+邻接表方式易于实现遍历相邻节点。
+
+![遍历邻边](assets/foreach.png)
+
+邻接表迭代器：
+
+```cpp
+class adjIterator {
+private:
+    SparseGraph& G;
+    int v;
+    int index;
+public:
+    adjIterator(SparseGraph& graph, int v): G(graph) {
+        this->v = v;
+        this->index = 0;
+    }
+
+    int begin() {
+        index = 0;
+        if (!G.g[v].empty()) {
+            return G.g[v][index];
+        }
+        return -1;
+    }
+
+    int next() {
+        index ++;
+        if (index < G.g[v].size()) {
+            return G.g[v][index];
+        }
+        return -1;
+    }
+
+    bool end() {
+        return index >= G.g[v].size();
+    }
+};
+```
+
+邻接矩阵迭代器：
+
+```cpp
+class adjIterator {
+private:
+    DenseGraph& G;
+    int v;
+    int index;
+public:
+    adjIterator(DenseGraph& graph, int v): G(graph) {
+        this->v = v;
+        this->index = 0;
+    }
+
+    int begin() {
+        int begin = -1;
+        return next();
+    }
+
+    int next() {
+        for (index += 1; index < G.V(); index ++) {
+            if (G.g[v][index]) {
+                return index;
+            }
+        }
+        return -1;
+    }
+
+    bool end() {
+        return index >= G.V();
+    }
+};
+```
