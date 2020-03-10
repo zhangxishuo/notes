@@ -205,3 +205,63 @@ public:
     }
 };
 ```
+
+## 深度优先遍历和连通分量
+
+![连通分量](assets/connected-component.png)
+
+```cpp
+template<typename Graph>
+class Component {
+private:
+    /** 图 */
+    Graph& G;
+    /** 是否被访问过 */
+    bool* visited;
+    /** 连通分量 */
+    int count;
+    /** 并查集 */
+    int* id;
+
+    /** 深度优先遍历 */
+    void DFS(int v) {
+        visited[v] = true;
+        id[v] = count;
+        typename Graph::adjIterator adj(G, v);
+        for (int i = adj.begin(); !adj.end(); i = adj.next()) {
+            if (!visited[i]) {
+                DFS(i);
+            }
+        }
+    }
+
+public:
+    Component(Graph& graph): G(graph) {
+        this->visited = new bool[G.V()];
+        this->id = new int[G.V()];
+        this->count = 0;
+        for (int i = 0; i < G.V(); i ++) {
+            this->visited[i] = false;
+            this->id[i] = -1;
+        }
+
+        for (int i = 0; i < G.V(); i ++) {
+            if (!visited[i]) {
+                DFS(i);
+                count ++;
+            }
+        }
+    }
+
+    ~Component() {
+        delete[] visited;
+        delete[] id;
+    }
+
+    bool isConnected(int v, int w) {
+        assert(v >= 0 && v < G.V());
+        assert(w >= 0 && w < G.V());
+        return id[v] == id[w];
+    }
+};
+```
