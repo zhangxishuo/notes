@@ -332,3 +332,85 @@ public:
     }
 };
 ```
+
+## 广度优先遍历和最短路径
+
+```cpp
+template<typename Graph>
+class ShortestPath {
+private:
+    /** 图 */
+    Graph& G;
+    /** 起始节点 */
+    int source;
+    /** 是否被访问过 */
+    bool* visited;
+    /** 当前节点是从哪个节点访问来的 */
+    int* from;
+    /** 最短距离 */
+    int* ord;
+
+public:
+    ShortestPath(Graph& graph, int s): G(graph) {
+        assert(s >= 0 && s < G.V());
+        this->visited = new bool[G.V()];
+        this->from = new int[G.V()];
+        this->ord = new int[G.V()];
+        for (int i = 0; i < G.V(); i ++) {
+            this->visited[i] = false;
+            this->from[i] = -1;
+            this->ord[i] = -1;
+        }
+        this->source = s;
+
+        queue<int> q;
+        q.push(source);
+        visited[source] = true;
+
+        while (!q.empty()) {
+            int v = q.front();
+            q.pop();
+
+            typename Graph::adjIterator adj(G, v);
+            for (int i = adj.begin(); !adj.end(); i = adj.next()) {
+                if (!visited[i]) {
+                    q.push(i);
+                    visited[i] = true;
+                    from[i] = v;
+                    ord[i] = ord[v] + 1;
+                }
+            }
+        }
+    }
+
+    ~ShortestPath() {
+        delete[] visited;
+        delete[] from;
+        delete[] ord;
+    }
+
+    bool hasPath(int w) {
+        assert(w >= 0 && w < G.V());
+        return visited[w];
+    }
+
+    void path(int w, vector<int>& vec) {
+        stack<int> s;
+        int p = w;
+        while (p != -1) {
+            s.push(p);
+            p = from[p];
+        }
+        vec.clear();
+        while (!s.empty()) {
+            vec.push_back(s.top());
+            s.pop();
+        }
+    }
+
+    int length(int w) {
+        assert(w >= 0 && w < G.V());
+        return ord[w];
+    }
+};
+```
