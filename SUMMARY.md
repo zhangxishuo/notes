@@ -19,3 +19,4 @@
     * [并查集](imooc/1-algorithm-data-structure/4-union-find/README.md)
     * [图论](imooc/1-algorithm-data-structure/5-graph-theory/README.md)
     * [最小生成树](imooc/1-algorithm-data-structure/6-min-tree/README.md)
+    * [最短路径](imooc/1-algorithm-data-structure/7-shortest-path/README.md)
