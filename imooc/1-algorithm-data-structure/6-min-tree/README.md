@@ -397,3 +397,54 @@ public:
     }
 };
 ```
+
+## Kruskal
+
+```cpp
+template<typename Graph, typename Weight>
+class KruskalMST {
+private:
+    vector<Edge<Weight>> mst;
+    Weight mstWeight;
+
+public:
+    KruskalMST(Graph& graph) {
+        MinHeap<Edge<Weight>> heap(graph.E());
+        for (int i = 0; i < graph.V(); i ++) {
+            typename Graph::adjIterator adj(G, v);
+            for (Edge<Weight>* e = adj.begin(); !adj.end(); e = adj.next()) {
+                if (e->V() < e->W()) {
+                    heap.insert(*e);
+                }
+            }
+        }
+
+        /** 使用并查集判断是否连通，避免成环 */
+        UnionFind uf(graph.V());
+        while (!heap.isEmpty() && mst.size() < graph.V() - 1) {
+            Edge<Weight> e = heap.extractMin();
+            if (uf.isConnected(e.V(), e.W())) {
+                continue;
+            }
+            mst.push_back(e);
+            uf.unionElements(e.V(), e.W());
+        }
+
+        mstWeight = mst[0].wt();
+        for (int i = 1; i < mst.size(); i ++) {
+            mstWeight += mst[i].wt();
+        }
+    }
+
+    ~KruskalMST() {
+    }
+
+    vector<Edge<Weight>> mstEdges() {
+        return mst;
+    }
+
+    Weight result() {
+        return mstWeight;
+    }
+};
+```
