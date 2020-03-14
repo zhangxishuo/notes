@@ -21,4 +21,5 @@
     * [最小生成树](imooc/1-algorithm-data-structure/6-min-tree/README.md)
     * [最短路径](imooc/1-algorithm-data-structure/7-shortest-path/README.md)
   * [编程必备基础 计算机组成原理+操作系统+计算机网络](imooc/2-programming-essentials/README.md)
-    * [计算机组成原理概述](imooc/2-programming-essentials/0-composition-principle-summary/README.md)
+    * [计算机组成原理之概述篇](imooc/2-programming-essentials/0-composition-principle-summary/README.md)
+    * [计算机组成原理之组成篇](imooc/2-programming-essentials/1-composition-principle-compose/README.md)
