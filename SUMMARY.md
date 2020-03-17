@@ -22,3 +22,4 @@
 * [编程必备基础 计算机组成原理+操作系统+计算机网络](imooc/2-programming-essentials/README.md)
   * [计算机组成原理之概述篇](imooc/2-programming-essentials/0-composition-principle-summary/README.md)
   * [计算机组成原理之组成篇](imooc/2-programming-essentials/1-composition-principle-compose/README.md)
+  * [计算机组成原理之计算篇](imooc/2-programming-essentials/2-composition-principle-calculate/README.md)
