@@ -89,9 +89,9 @@
 - 尾数规定使用纯小数。
 - 尾数最高位必须是`1`。
 
-![浮点数样例](floating-point-number-sample.png)
+![浮点数样例](assets/floating-point-number-sample.png)
 
-![浮点数样例](floating-point-number-sample-2.png)
+![浮点数样例](assets/floating-point-number-sample-2.png)
 
 ### 定点数与浮点数的对比
 
