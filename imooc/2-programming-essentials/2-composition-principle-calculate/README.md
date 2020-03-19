@@ -57,3 +57,17 @@
 小数的补码同样适用上述规律。
 
 ![小数的补码](assets/decimal-sample.png)
+
+## 定点数和浮点数
+
+### 定点数的表示方法
+
+小数点固定在某个位置的数称之为定点数。
+
+![定点数](assets/fixed-point-number.png)
+
+![定点数](assets/fixed-point-number-2.png)
+
+### 浮点数的表示方法
+
+### 定点数与浮点数的对比
