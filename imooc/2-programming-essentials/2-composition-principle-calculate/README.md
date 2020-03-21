@@ -108,3 +108,5 @@
 数值位与符号位一同运算，并将符号位产生的进位自然丢掉。
 
 ![定点数加减法示例](assets/fixed-point-add-and-sub-sample.png)
+
+![定点数加减法示例](assets/fixed-point-add-and-sub-sample-2.png)
