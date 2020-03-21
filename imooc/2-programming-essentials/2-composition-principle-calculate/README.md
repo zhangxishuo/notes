@@ -110,3 +110,5 @@
 ![定点数加减法示例](assets/fixed-point-add-and-sub-sample.png)
 
 ![定点数加减法示例](assets/fixed-point-add-and-sub-sample-2.png)
+
+![定点数加减法示例](assets/fixed-point-add-and-sub-sample-3.png)
