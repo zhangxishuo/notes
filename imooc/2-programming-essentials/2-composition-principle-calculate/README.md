@@ -163,3 +163,10 @@
 - 浮点运算主要通过阶码的双符号位判断是否溢出。
 - 如果规格化后，阶码双符号位不一致，则认为是溢出。
 
+## 浮点数的乘除法运算
+
+![浮点数的乘除法运算](assets/floating-point-mul-and-div.png)
+
+![浮点数的乘除法运算](assets/floating-point-mul-and-div-2.png)
+
+![浮点数的乘除法运算](assets/floating-point-mul-and-div-3.png)
