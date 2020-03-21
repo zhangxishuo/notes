@@ -112,3 +112,13 @@
 ![定点数加减法示例](assets/fixed-point-add-and-sub-sample-2.png)
 
 ![定点数加减法示例](assets/fixed-point-add-and-sub-sample-3.png)
+
+### 判断溢出
+
+#### 双符号位判断法
+
+- 单符号位表示变成双符号位：`0 => 00, 1 => 11`。
+- 双符号位产生的进位丢弃。
+- 结果的双符号位不同则表示溢出。
+
+![双符号位判断法](assets/double-sign-bit.png)
