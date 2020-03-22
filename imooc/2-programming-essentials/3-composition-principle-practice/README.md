@@ -22,7 +22,7 @@ class Node:
 
 
 class DoubleLinkedList:
-    def __init__(self, capacity):
+    def __init__(self, capacity=0xffff):
         self.capacity = capacity
         self.head = None
         self.tail = None
@@ -196,4 +196,72 @@ class LRUCache(object):
 
     def print(self):
         self.list.print()
+```
+
+## 实现LFU缓存置换算法
+
+```python
+from principle.DoubleLinkedList import DoubleLinkedList, Node
+
+
+class LFUNode(Node):
+    def __init__(self, key, value):
+        self.freq = 0
+        super(LFUNode, self).__init__(key, value)
+
+
+class LFUCache(object):
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.map = {}
+        # key: 频率, value: 频率对应的双向链表
+        self.freq_map = {}
+        self.size = 0
+
+    def __update_freq(self, node):
+        freq = node.freq
+        node = self.freq_map[freq].remove(node)
+        if self.freq_map[freq].size == 0:
+            del self.freq_map[freq]
+        freq += 1
+        node.freq = freq
+        if freq not in self.freq_map:
+            self.freq_map[freq] = DoubleLinkedList()
+        self.freq_map[freq].append(node)
+
+    def get(self, key):
+        if key not in self.map:
+            return -1
+        node = self.map.get(key)
+        self.__update_freq(node)
+        return node.value
+
+    def put(self, key, value):
+        if self.capacity == 0:
+            return
+        if key in self.map:
+            node = self.map.get(key)
+            node.value = value
+            self.__update_freq(node)
+        else:
+            if self.capacity == self.size:
+                min_freq = min(self.freq_map)
+                node = self.freq_map[min_freq].pop()
+                del self.map[node.key]
+                self.size -= 1
+            node = LFUNode(key, value)
+            node.freq = 1
+            self.map[key] = node
+            if node.freq not in self.freq_map:
+                self.freq_map[node.freq] = DoubleLinkedList()
+            node = self.freq_map[node.freq].append(node)
+            self.size += 1
+
+    def print(self):
+        print('***************************')
+        for k, v in self.freq_map.items():
+            print('Freq = %d' % k)
+            self.freq_map[k].print()
+        print('***************************')
+        print()
 ```
