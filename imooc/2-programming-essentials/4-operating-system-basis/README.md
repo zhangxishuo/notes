@@ -277,4 +277,14 @@ IO文件信息：被进程`IO`操作所占用的文件列表。
 - `ID`为`1`的进程为`init`进程，是`0`号进程的子进程，完成系统初始化。
 - `init`进程是所有用户进程的祖先进程。
 
+**进程的状态标记**
+
+状态符号 | 状态说明
+- | -
+R | TASK_RUNNING，运行状态
+S | TASK_INTERRUPTIBLE，睡眠状态
+D | TASK_UNINTERRUPTIBLE，IO等待的睡眠状态
+T | TASK_STOPPED，暂停状态
+Z | TASK_DEAD/EXIT_ZOMBIE，退出状态/僵尸进程
+
 ### 操作Linux进程的相关命令
