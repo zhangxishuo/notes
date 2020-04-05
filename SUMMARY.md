@@ -6,6 +6,7 @@
 * [Redis](redis/README.md)
 * [Spring Boot](spring-boot/README.md)
 * [Spring Cloud](spring-cloud/README.md)
+* [计算机组成原理](composit/README.md)
 * [慕课网](imooc/README.md)
   * [Spring Boot企业微信点餐系统](imooc/spring-boot-wechat/README.md)
     * [项目架构](imooc/spring-boot-wechat/architecture/README.md)
