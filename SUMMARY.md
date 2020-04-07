@@ -8,6 +8,7 @@
 * [Spring Cloud](spring-cloud/README.md)
 * [计算机组成原理](composit/README.md)
   * [计算机的发展历史](composit/history/README.md)
+  * [计算机的分类](composit/category/README.md)
 * [操作系统](operating-system/README.md)
 * [慕课网](imooc/README.md)
   * [Spring Boot企业微信点餐系统](imooc/spring-boot-wechat/README.md)
