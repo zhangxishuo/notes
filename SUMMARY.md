@@ -2,6 +2,7 @@
 
 * [个人履历](README.md)
 * [Java](java/README.md)
+* [JavaScript](javascript/README.md)
 * [MySQL](mysql/README.md)
 * [Redis](redis/README.md)
 * [Spring Boot](spring-boot/README.md)
