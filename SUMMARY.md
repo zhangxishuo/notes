@@ -22,6 +22,7 @@
   * [Linux的进程管理](operating-system/linux-process/README.md)
   * [作业管理之进程调度](operating-system/process-schedule/README.md)
   * [作业管理之死锁](operating-system/dead-lock/README.md)
+  * [存储管理之内存分配与回收](operating-system/memory/README.md)
 * [慕课网](imooc/README.md)
   * [Spring Boot企业微信点餐系统](imooc/spring-boot-wechat/README.md)
     * [项目架构](imooc/spring-boot-wechat/architecture/README.md)
