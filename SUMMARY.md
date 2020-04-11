@@ -19,6 +19,7 @@
   * [进程管理之进程实体](operating-system/process-entity/README.md)
   * [进程管理之五状态模型](operating-system/process-status/README.md)
   * [进程管理之进程同步](operating-system/process-sync/README.md)
+  * [Linux的进程管理](operating-system/linux-process/README.md)
 * [慕课网](imooc/README.md)
   * [Spring Boot企业微信点餐系统](imooc/spring-boot-wechat/README.md)
     * [项目架构](imooc/spring-boot-wechat/architecture/README.md)
