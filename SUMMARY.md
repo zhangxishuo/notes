@@ -17,6 +17,7 @@
 * [操作系统](operating-system/README.md)
   * [操作系统概览](operating-system/summary/README.md)
   * [进程管理之进程实体](operating-system/process-entity/README.md)
+  * [进程管理之五状态模型](operating-system/process-status/README.md)
 * [慕课网](imooc/README.md)
   * [Spring Boot企业微信点餐系统](imooc/spring-boot-wechat/README.md)
     * [项目架构](imooc/spring-boot-wechat/architecture/README.md)
