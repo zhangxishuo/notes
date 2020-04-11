@@ -46,4 +46,3 @@
     * [计算机组成原理之组成篇](imooc/programming-essentials/1-composition-principle-compose/README.md)
     * [计算机组成原理之计算篇](imooc/programming-essentials/2-composition-principle-calculate/README.md)
     * [计算机组成原理实践](imooc/programming-essentials/3-composition-principle-practice/README.md)
-    * [操作系统之基础篇](imooc/programming-essentials/4-operating-system-basis/README.md)
