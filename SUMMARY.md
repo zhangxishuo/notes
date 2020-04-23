@@ -8,6 +8,8 @@
 * [Redis](redis/README.md)
 * [Spring Boot](spring-boot/README.md)
 * [Spring Cloud](spring-cloud/README.md)
+* [消息队列](mq/README.md)
+  * [介绍](mq/introduce/README.md)
 * [计算机组成原理](composit/README.md)
   * [计算机的发展历史](composit/history/README.md)
   * [计算机的分类](composit/category/README.md)
