@@ -12,6 +12,7 @@
 * [消息队列](mq/README.md)
   * [介绍](mq/introduce/README.md)
   * [ActiveMQ](mq/active-mq/README.md)
+  * [RabbitMQ](mq/rabbit-mq/README.md)
 * [计算机组成原理](composit/README.md)
   * [计算机的发展历史](composit/history/README.md)
   * [计算机的分类](composit/category/README.md)
