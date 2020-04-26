@@ -1,6 +1,7 @@
 # Summary
 
 * [个人履历](README.md)
+* [架构](architecture/README.md)
 * [Java](java/README.md)
 * [JavaScript](javascript/README.md)
 * [MySQL](mysql/README.md)
