@@ -2,7 +2,8 @@
 
 * [个人履历](README.md)
 * [架构](architecture/README.md)
-  * [大型网站的特点](architecture/feature/README.md)
+  * [大型网站的特点与设计宗旨](architecture/feature-design/README.md)
+  * [大型网站架构演进历程](architecture/evolution/README.md)
 * [Java](java/README.md)
 * [JavaScript](javascript/README.md)
 * [MySQL](mysql/README.md)
