@@ -2,6 +2,7 @@
 
 * [个人履历](README.md)
 * [架构](architecture/README.md)
+  * [大型网站的特点](architecture/feature/README.md)
 * [Java](java/README.md)
 * [JavaScript](javascript/README.md)
 * [MySQL](mysql/README.md)
